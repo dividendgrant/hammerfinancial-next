@@ -13,7 +13,7 @@ export const posts: Post[] = [
     title: "We're done buying BCCC",
     date: "2026-05-26",
     excerpt: "After watching the NAV erosion, we've stopped buying BCCC. Here's why — and what we're buying instead.",
-    image: "/fund-income.jpg",
+    image: "/post-default.jpg",
     paragraphs: [
       "After watching the NAV erosion, we've stopped buying BCCC. It's been rough.",
       "In February alone, the fund returned -16.8% while its category averaged +5.7%. Maximum drawdown hit -41% and it's still down over 25%. Total assets are just $9 million. That's too small and too volatile.",
