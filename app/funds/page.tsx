@@ -84,8 +84,8 @@ export default function FundsPage() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 space-y-8">
           {funds.map((fund) => (
             <div key={fund.name} className="border border-gray-200 rounded-2xl overflow-hidden hover:shadow-md transition-shadow">
-              <div className="relative w-full h-56 sm:h-64">
-                <Image src={fund.image} alt={fund.name} fill className="object-cover" />
+              <div className="relative w-full" style={{ aspectRatio: "1024/450" }}>
+                <Image src={fund.image} alt={fund.name} fill className="object-contain bg-gray-50" />
               </div>
               <div className="p-8">
                 <div className="flex flex-wrap items-start justify-between gap-4 mb-4">
