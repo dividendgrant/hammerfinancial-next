@@ -15,12 +15,7 @@ const funds = [
     detail:
       "Income is prioritised for real-world utility or reinvested into the Treasury fund. Full transparency: paid members gain exclusive access to a complete record of all activity.",
     cta: { label: "Join for $60/month", href: "/work-with-us/" },
-    allocation: [
-      { asset: "Bitcoin (BTC)", pct: 70, color: "bg-orange-400" },
-      { asset: "Ethereum (ETH)", pct: 10, color: "bg-blue-400" },
-      { asset: "Solana (SOL)", pct: 10, color: "bg-purple-400" },
-      { asset: "Sui (SUI)", pct: 10, color: "bg-cyan-400" },
-    ],
+    allocation: null,
   },
   {
     name: "Hammer Treasury",
