@@ -3,5 +3,9 @@ compatibility_date = "2024-09-23"
 compatibility_flags = ["nodejs_compat"]
 pages_build_output_dir = ".open-next/assets"
 
+[pages_build_config]
+build_command = "npx opennextjs-cloudflare build"
+build_output_dir = ".open-next/assets"
+
 [vars]
 # Set RESEND_API_KEY in the Cloudflare Pages dashboard under Settings → Environment variables
