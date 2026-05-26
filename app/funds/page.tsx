@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
 
@@ -8,17 +9,24 @@ const funds = [
     name: "Hammer Income",
     tag: "Yield Generation",
     tagColor: "bg-green-100 text-green-700",
+    image: "/fund-income.jpg",
     description:
       "This fund focuses on generating consistent cash flow through crypto-related yield ETFs, including NEOS Bitcoin High Income (BTCI), Global X Bitcoin Covered Call (BCCC), Nicholas Crypto Income (BLOX), and others.",
     detail:
       "Income is prioritised for real-world utility or reinvested into the Treasury fund. Full transparency: paid members gain exclusive access to a complete record of all activity.",
     cta: { label: "Join for $60/month", href: "/work-with-us/" },
-    allocation: null,
+    allocation: [
+      { asset: "Bitcoin (BTC)", pct: 70, color: "bg-orange-400" },
+      { asset: "Ethereum (ETH)", pct: 10, color: "bg-blue-400" },
+      { asset: "Solana (SOL)", pct: 10, color: "bg-purple-400" },
+      { asset: "Sui (SUI)", pct: 10, color: "bg-cyan-400" },
+    ],
   },
   {
     name: "Hammer Treasury",
     tag: "Treasury Reserve",
     tagColor: "bg-orange-100 text-orange-700",
+    image: "/fund-treasury.jpg",
     description:
       "Position yourself at the forefront of the growing crypto treasury trend. Built for personal or corporate treasury reserves with opportunistic buying for increased growth.",
     detail: null,
@@ -34,6 +42,7 @@ const funds = [
     name: "Hammer Long Term",
     tag: "Set & Forget",
     tagColor: "bg-blue-100 text-blue-700",
+    image: "/fund-longterm.jpg",
     description:
       "A simple investment mix of safe ETFs and a dash of Bitcoin, built for steady growth and minimal management. Dollar-cost averaging is central to this strategy.",
     detail: null,
@@ -49,6 +58,7 @@ const funds = [
     name: "Hammer Growth",
     tag: "Aggressive Growth",
     tagColor: "bg-red-100 text-red-700",
+    image: "/fund-growth.jpg",
     description:
       "Maximum Bitcoin exposure paired with technology sector equity for investors targeting the sharpest possible upward trajectory and comfortable with higher volatility.",
     detail: null,
@@ -73,24 +83,27 @@ export default function FundsPage() {
       <section className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 space-y-8">
           {funds.map((fund) => (
-            <div key={fund.name} className="border border-gray-200 rounded-2xl p-8 hover:shadow-md transition-shadow">
-              <div className="flex flex-wrap items-start justify-between gap-4 mb-4">
-                <div>
-                  <span className={`inline-block text-xs font-semibold px-3 py-1 rounded-full mb-2 ${fund.tagColor}`}>
-                    {fund.tag}
-                  </span>
-                  <h2 className="text-xl font-bold text-gray-900">{fund.name}</h2>
-                </div>
-                {fund.cta && (
-                  <Link href={fund.cta.href}
-                    className="bg-[#0057AD] text-white font-semibold px-6 py-2.5 rounded-md hover:bg-[#0A2279] transition-colors text-sm">
-                    {fund.cta.label}
-                  </Link>
-                )}
+            <div key={fund.name} className="border border-gray-200 rounded-2xl overflow-hidden hover:shadow-md transition-shadow">
+              <div className="relative w-full h-56 sm:h-64">
+                <Image src={fund.image} alt={fund.name} fill className="object-cover" />
               </div>
-              <p className="text-gray-600 leading-relaxed mb-3">{fund.description}</p>
-              {fund.detail && <p className="text-gray-500 text-sm leading-relaxed mb-4">{fund.detail}</p>}
-              {fund.allocation && (
+              <div className="p-8">
+                <div className="flex flex-wrap items-start justify-between gap-4 mb-4">
+                  <div>
+                    <span className={`inline-block text-xs font-semibold px-3 py-1 rounded-full mb-2 ${fund.tagColor}`}>
+                      {fund.tag}
+                    </span>
+                    <h2 className="text-xl font-bold text-gray-900">{fund.name}</h2>
+                  </div>
+                  {fund.cta && (
+                    <Link href={fund.cta.href}
+                      className="bg-[#0057AD] text-white font-semibold px-6 py-2.5 rounded-md hover:bg-[#0A2279] transition-colors text-sm">
+                      {fund.cta.label}
+                    </Link>
+                  )}
+                </div>
+                <p className="text-gray-600 leading-relaxed mb-3">{fund.description}</p>
+                {fund.detail && <p className="text-gray-500 text-sm leading-relaxed mb-4">{fund.detail}</p>}
                 <div className="mt-4">
                   <p className="text-sm font-semibold text-gray-700 mb-3">Allocation</p>
                   <div className="flex rounded-full overflow-hidden h-3 mb-3">
@@ -107,7 +120,7 @@ export default function FundsPage() {
                     ))}
                   </div>
                 </div>
-              )}
+              </div>
             </div>
           ))}
         </div>
