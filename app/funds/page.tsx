@@ -99,22 +99,24 @@ export default function FundsPage() {
                 </div>
                 <p className="text-gray-600 leading-relaxed mb-3">{fund.description}</p>
                 {fund.detail && <p className="text-gray-500 text-sm leading-relaxed mb-4">{fund.detail}</p>}
-                <div className="mt-4">
-                  <p className="text-sm font-semibold text-gray-700 mb-3">Allocation</p>
-                  <div className="flex rounded-full overflow-hidden h-3 mb-3">
-                    {fund.allocation.map((a) => (
-                      <div key={a.asset} style={{ width: `${a.pct}%` }} className={`${a.color}`} title={`${a.asset} ${a.pct}%`} />
-                    ))}
+                {fund.allocation && (
+                  <div className="mt-4">
+                    <p className="text-sm font-semibold text-gray-700 mb-3">Allocation</p>
+                    <div className="flex rounded-full overflow-hidden h-3 mb-3">
+                      {fund.allocation.map((a) => (
+                        <div key={a.asset} style={{ width: `${a.pct}%` }} className={`${a.color}`} title={`${a.asset} ${a.pct}%`} />
+                      ))}
+                    </div>
+                    <div className="flex flex-wrap gap-4">
+                      {fund.allocation.map((a) => (
+                        <div key={a.asset} className="flex items-center gap-1.5 text-xs text-gray-600">
+                          <span className={`w-2.5 h-2.5 rounded-full ${a.color}`} />
+                          {a.asset} — {a.pct}%
+                        </div>
+                      ))}
+                    </div>
                   </div>
-                  <div className="flex flex-wrap gap-4">
-                    {fund.allocation.map((a) => (
-                      <div key={a.asset} className="flex items-center gap-1.5 text-xs text-gray-600">
-                        <span className={`w-2.5 h-2.5 rounded-full ${a.color}`} />
-                        {a.asset} — {a.pct}%
-                      </div>
-                    ))}
-                  </div>
-                </div>
+                )}
               </div>
             </div>
           ))}
