@@ -71,7 +71,7 @@ export default function HomePage() {
             </div>
           </div>
           <div className="hidden lg:flex justify-end">
-            <Image src="/hero-person.png" alt="" width={380} height={460} className="object-contain drop-shadow-2xl" />
+            <Image src="/hero-person.png" alt="" width={500} height={600} className="object-contain drop-shadow-2xl" />
           </div>
         </div>
       </section>
