@@ -65,8 +65,8 @@ export default function AboutPage() {
                 </p>
               </div>
             </div>
-            <div className="relative w-full rounded-2xl overflow-hidden shadow-lg" style={{ aspectRatio: "4/3" }}>
-              <Image src="/about-hodl.jpg" alt="HODL — Hammer Financial" fill className="object-cover" />
+            <div className="relative w-full rounded-2xl overflow-hidden shadow-lg" style={{ aspectRatio: "880/1168" }}>
+              <Image src="/about-hodl.jpg" alt="HODL — Hammer Financial" fill className="object-contain bg-gray-50" />
             </div>
           </div>
         </div>
@@ -110,7 +110,7 @@ export default function AboutPage() {
             {team.map((member) => (
               <div key={member.name} className="text-center">
                 <div className="relative w-28 h-28 rounded-full overflow-hidden mx-auto mb-4 border-4 border-[#0057AD]/10">
-                  <Image src={member.image} alt={member.name} fill className="object-cover" />
+                  <Image src={member.image} alt={member.name} fill className="object-cover object-top" />
                 </div>
                 <h3 className="font-bold text-gray-900">{member.name}</h3>
                 <p className="text-sm text-[#0057AD] font-medium mb-3">{member.role}</p>
