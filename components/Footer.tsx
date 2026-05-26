@@ -50,10 +50,7 @@ export default function Footer() {
 
         <div className="border-t border-blue-800 pt-6">
           <p className="text-xs text-blue-300 leading-relaxed">
-            <strong className="text-blue-200">Disclaimer:</strong> Hammer Financial provides educational content only and
-            is not a licensed financial advisor, investment advisor, or broker-dealer. Nothing on this site
-            constitutes financial, investment, legal, or tax advice. All investment involves risk. Please
-            consult a qualified professional before making any investment decisions.
+            <strong className="text-blue-200">Disclaimer:</strong> The information provided by Hammer Financial is for educational and informational purposes only and should not be construed as financial, investment, or legal advice. Hammer Financial is not a licensed financial advisor, broker, or investment firm. All strategies, examples, and portfolio updates reflect our own research and decisions and are shared solely for transparency and educational value. Any financial decisions you make are your sole responsibility, and you should consult with a licensed financial advisor or other qualified professional before making investment choices.
           </p>
           <p className="text-xs text-blue-400 mt-3">
             © {new Date().getFullYear()} Hammer Financial. All rights reserved.

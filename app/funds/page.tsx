@@ -124,8 +124,7 @@ export default function FundsPage() {
       <section className="py-14 bg-gray-50 text-center">
         <div className="max-w-xl mx-auto px-4 sm:px-6">
           <p className="text-xs text-gray-400 leading-relaxed">
-            All fund information is provided for educational purposes only. Nothing here constitutes
-            financial advice. Consult a qualified professional before making investment decisions.
+            The information provided by Hammer Financial is for educational and informational purposes only and should not be construed as financial, investment, or legal advice. Hammer Financial is not a licensed financial advisor, broker, or investment firm. All strategies, examples, and portfolio updates reflect our own research and decisions and are shared solely for transparency and educational value. Any financial decisions you make are your sole responsibility, and you should consult with a licensed financial advisor or other qualified professional before making investment choices.
           </p>
         </div>
       </section>
