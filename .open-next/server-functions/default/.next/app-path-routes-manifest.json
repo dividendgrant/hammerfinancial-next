@@ -1,0 +1,14 @@
+{
+  "/_global-error/page": "/_global-error",
+  "/_not-found/page": "/_not-found",
+  "/about-us/page": "/about-us",
+  "/api/contact/route": "/api/contact",
+  "/contact-us/page": "/contact-us",
+  "/favicon.ico/route": "/favicon.ico",
+  "/funds/page": "/funds",
+  "/news/page": "/news",
+  "/page": "/",
+  "/robots.txt/route": "/robots.txt",
+  "/sitemap.xml/route": "/sitemap.xml",
+  "/work-with-us/page": "/work-with-us"
+}

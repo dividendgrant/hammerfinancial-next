@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = "https://hammerfinancial.com";
-  const routes = ["/", "/about-us/", "/funds/", "/news/", "/contact-us/", "/work-with-us/"];
+  const routes = ["/", "/about-us/", "/funds/", "/insights/", "/contact-us/", "/work-with-us/"];
   return routes.map((route) => ({
     url: `${base}${route}`,
     lastModified: new Date(),

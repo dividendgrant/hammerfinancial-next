@@ -20,7 +20,7 @@ export default function Footer() {
                 ["Home", "/"],
                 ["About", "/about-us/"],
                 ["Funds", "/funds/"],
-                ["Insights", "/news/"],
+                ["Insights", "/insights/"],
                 ["Contact Us", "/contact-us/"],
                 ["Work with Us", "/work-with-us/"],
               ].map(([label, href]) => (

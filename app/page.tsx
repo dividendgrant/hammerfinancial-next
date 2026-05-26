@@ -130,7 +130,7 @@ export default function HomePage() {
               <h2 className="text-2xl font-bold mb-3">Crypto Insights</h2>
               <p className="text-blue-100 leading-relaxed">Stay up to date with our latest analysis, fund updates, and market perspectives.</p>
             </div>
-            <Link href="/news/" className="mt-8 inline-block bg-white text-[#0057AD] font-semibold px-6 py-3 rounded-md hover:bg-blue-50 transition-colors text-center">
+            <Link href="/insights/" className="mt-8 inline-block bg-white text-[#0057AD] font-semibold px-6 py-3 rounded-md hover:bg-blue-50 transition-colors text-center">
               Read Insights
             </Link>
           </div>

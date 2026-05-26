@@ -9,7 +9,7 @@ const nav = [
   { label: "Home", href: "/" },
   { label: "About", href: "/about-us/" },
   { label: "Funds", href: "/funds/" },
-  { label: "Insights", href: "/news/" },
+  { label: "Insights", href: "/insights/" },
   { label: "Contact Us", href: "/contact-us/" },
 ];
 
