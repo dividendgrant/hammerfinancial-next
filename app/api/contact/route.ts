@@ -29,7 +29,8 @@ export async function POST(request: Request) {
     });
 
     if (!res.ok) {
-      return Response.json({ error: "Failed to send" }, { status: 500 });
+      const body = await res.json().catch(() => ({}));
+      return Response.json({ error: "Failed to send", detail: body }, { status: 500 });
     }
 
     return Response.json({ ok: true });
