@@ -12,14 +12,14 @@ export default function ContactForm() {
     const form = e.currentTarget;
     const data = Object.fromEntries(new FormData(form));
 
-    if (data["bot-field"]) return; // honeypot
+    if (data["bot-field"]) return;
 
     setStatus("submitting");
     try {
       const res = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email: data.email, message: data.message }),
+        body: JSON.stringify({ name: data.name, email: data.email, message: data.message }),
       });
       if (!res.ok) throw new Error();
       setStatus("success");
@@ -43,6 +43,19 @@ export default function ContactForm() {
       {/* Honeypot */}
       <div aria-hidden="true" className="absolute -left-[9999px]">
         <input type="text" name="bot-field" tabIndex={-1} autoComplete="off" />
+      </div>
+
+      <div>
+        <label className="block text-sm font-medium text-gray-700 mb-1">
+          Name <span className="text-red-500">*</span>
+        </label>
+        <input
+          type="text"
+          name="name"
+          required
+          placeholder="Your name"
+          className="w-full border border-gray-300 rounded-md px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-[#0057AD] focus:border-transparent"
+        />
       </div>
 
       <div>
@@ -72,7 +85,7 @@ export default function ContactForm() {
       </div>
 
       {status === "error" && (
-        <p className="text-sm text-red-600">Something went wrong. Please try again.</p>
+        <p className="text-sm text-red-600">Something went wrong. Please try again or email us directly at hammerfingroup@gmail.com</p>
       )}
 
       <button

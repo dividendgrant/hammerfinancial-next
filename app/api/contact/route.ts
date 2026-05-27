@@ -2,9 +2,9 @@ export const runtime = "edge";
 
 export async function POST(request: Request) {
   try {
-    const { email, message } = await request.json() as { email?: string; message?: string };
+    const { name, email, message } = await request.json() as { name?: string; email?: string; message?: string };
 
-    if (!email || !message) {
+    if (!name || !email || !message) {
       return Response.json({ error: "Missing fields" }, { status: 400 });
     }
 
@@ -23,8 +23,8 @@ export async function POST(request: Request) {
         from: "Hammer Financial <noreply@hammerfinancial.com>",
         to: ["hammerfingroup@gmail.com"],
         reply_to: email,
-        subject: `Website Contact from ${email}`,
-        text: `From: ${email}\n\n${message}`,
+        subject: `Website Contact from ${name}`,
+        text: `Name: ${name}\nEmail: ${email}\n\n${message}`,
       }),
     });
 
