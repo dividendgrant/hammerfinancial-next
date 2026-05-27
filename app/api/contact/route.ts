@@ -20,7 +20,7 @@ export async function POST(request: Request) {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        from: "Hammer Financial <noreply@hammerfinancial.com>",
+        from: "Hammer Financial <onboarding@resend.dev>",
         to: ["hammerfingroup@gmail.com"],
         reply_to: email,
         subject: `Website Contact from ${name}`,
