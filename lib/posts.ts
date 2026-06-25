@@ -9,6 +9,20 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    slug: "dripping-blox-redirecting-btci",
+    title: "How we're playing this BTC run",
+    date: "2026-06-25",
+    excerpt: "BTC's on a rough run. Here's how we're handling our income positions — dripping BLOX, but redirecting BTCI's yield into spot.",
+    image: "/post-default.jpg",
+    paragraphs: [
+      "BTC is on a rough run, so we're adjusting how we handle our income positions.",
+      "We're dripping BLOX right now. Reinvesting the distributions while prices are down makes sense to us — we're buying more shares cheap.",
+      "We're not dripping BTCI. The NAV erosion there is too steep, and reinvesting into a declining NAV just compounds the problem.",
+      "Instead, we're taking the yield from BTCI and putting it to work elsewhere. On red days, we use that income to buy spot BTC or BTC spot ETFs.",
+      "The logic is simple: keep the income flowing, but redirect it out of a position that's bleeding NAV and into Bitcoin exposure we actually want to hold.",
+    ],
+  },
+  {
     slug: "done-buying-bccc",
     title: "We're done buying BCCC",
     date: "2026-05-26",
