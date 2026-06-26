@@ -10,10 +10,10 @@ export type Post = {
 export const posts: Post[] = [
   {
     slug: "dripping-blox-redirecting-btci",
-    title: "How we're playing this BTC run",
+    title: "DRIPing BLOX for now",
     date: "2026-06-25",
     excerpt: "BTC's on a rough run. Here's how we're handling our income positions — dripping BLOX, but redirecting BTCI's yield into spot.",
-    image: "/post-default.jpg",
+    image: "/post-blox-drip.jpg",
     paragraphs: [
       "BTC is on a rough run, so we're adjusting how we handle our income positions.",
       "We're dripping BLOX right now. Reinvesting the distributions while prices are down makes sense to us — we're buying more shares cheap.",
