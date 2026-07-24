@@ -9,6 +9,21 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    slug: "bitcoin-yield-aum-update",
+    title: "Bitcoin Yield AUM Update",
+    date: "2026-07-24",
+    excerpt: "Crypto income ETFs by assets under management — BTCI dwarfs BLOX and CEPI.",
+    image: "/post-aum-update.jpg",
+    paragraphs: [
+      "Crypto Income ETFs: AUM Comparison",
+      "BTCI (NEOS Bitcoin High Income ETF) — ~$1.15B",
+      "BLOX (Nicholas Crypto Income ETF) — ~$305M",
+      "CEPI (REX Crypto Equity Premium Income ETF) — ~$112M",
+      "BTCI is the largest by far, roughly 3.8x bigger than BLOX and 10x bigger than CEPI.",
+      "Data: BTCI as of July 21, 2026; BLOX as of July 3, 2026; CEPI as of June 30, 2026.",
+    ],
+  },
+  {
     slug: "dripping-blox-redirecting-btci",
     title: "DRIPing BLOX for now",
     date: "2026-06-25",
