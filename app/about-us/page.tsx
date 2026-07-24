@@ -13,10 +13,10 @@ const team = [
     social: { x: "https://x.com/DividendGrant" },
   },
   {
-    name: "Taylor Shellhammer",
+    name: "Gavin Shellhammer",
     role: "Operations",
     image: "/team-taylor.png",
-    bio: "Taylor oversees day-to-day operations, ensuring subscribers receive timely updates and that all internal processes run smoothly.",
+    bio: "Gavin oversees day-to-day operations, ensuring subscribers receive timely updates and that all internal processes run smoothly.",
     social: {},
   },
   {
