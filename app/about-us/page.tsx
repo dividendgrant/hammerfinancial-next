@@ -15,7 +15,7 @@ const team = [
   {
     name: "Gavin Shellhammer",
     role: "Operations",
-    image: "/team-taylor.png",
+    image: "/team-gavin.png",
     bio: "Gavin oversees day-to-day operations, ensuring subscribers receive timely updates and that all internal processes run smoothly.",
     social: {},
   },

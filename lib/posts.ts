@@ -7,6 +7,8 @@ export type Post = {
   paragraphs: string[];
 };
 
+// Convention: every post gets its OWN unique cover image. Do not reuse a
+// shared "/post-default.jpg" for new posts — generate/supply a distinct image.
 export const posts: Post[] = [
   {
     slug: "bitcoin-yield-aum-update",
