@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import SubscribeCard from "@/components/SubscribeCard";
 
 export const metadata: Metadata = { title: "Work with Us" };
 
@@ -34,26 +35,7 @@ export default function WorkWithUsPage() {
       <section className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
           {/* Pricing card */}
-          <div className="border-2 border-[#0057AD] rounded-2xl p-10">
-            <div className="inline-block bg-[#0057AD]/10 text-[#0057AD] text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full mb-6">
-              Subscribers
-            </div>
-            <div className="flex items-end gap-1 mb-2">
-              <span className="text-5xl font-bold text-gray-900">$60</span>
-              <span className="text-gray-500 mb-1">/month</span>
-            </div>
-            <p className="text-gray-500 mb-8">
-              Join our exclusive Telegram group for real-time portfolio updates, holding changes,
-              and yield commentary — direct from our team.
-            </p>
-            <button
-              disabled
-              className="w-full bg-[#0057AD] text-white font-semibold py-3.5 rounded-md opacity-50 cursor-not-allowed"
-            >
-              Join Now — Coming Soon
-            </button>
-            <p className="text-xs text-gray-400 text-center mt-3">Secure payment. Cancel any time.</p>
-          </div>
+          <SubscribeCard />
 
           {/* Features */}
           <div className="space-y-6">
