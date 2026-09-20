@@ -11,6 +11,25 @@ export type Post = {
 // shared "/post-default.jpg" for new posts — generate/supply a distinct image.
 export const posts: Post[] = [
   {
+    slug: "is-crypto-heating-back-up",
+    title: "Is crypto heating back up?",
+    date: "2026-09-20",
+    excerpt: "Last week turned on Tuesday. BTC and ETH clawed back a few percent, ETH finally cleared $2,600 \u2014 and Zcash ran 33.8%.",
+    image: "/post-crypto-heating-up.jpg",
+    paragraphs: [
+      "Last week opened soft and looked like more of the same. By Friday it didn't. The turn came Tuesday, and from there every major we watch closed the week green.",
+      "Tuesday, September 15 was the low across the board: BTC at $75,613, ETH at $2,399, ZEC at $1,111. Then it reversed. Thursday into Friday did most of the work \u2014 BTC added 5.9% to close at $80,901, and ETH jumped 6.7% to $2,611.",
+      "That ETH close matters more than the size of the move. $2,600 had capped ETH for most of September. Clearing it on a 6.7% day, rather than grinding at it, is the kind of break that tends to hold. The next real test sits around $2,750\u2013$2,800, and above that the $3,000 level comes back into the conversation.",
+      "ETH's flow picture turned late in the week too. Spot ETH ETFs still finished the week at roughly $140 million in net outflows, but Thursday's session broke a three-day run of outflows totaling about $405 million and brought in $143.8 million. Open interest reached about $31.5 billion, its highest in roughly four months \u2014 rising price on rising open interest means traders are adding, not covering.",
+      "But the week belonged to Zcash. ZEC ran 33.8% Monday to Friday, and 40.2% measured off Tuesday's low, closing Friday at $1,558. Indexed to Monday's close, BTC and ETH finish the week around 103 \u2014 ZEC finishes near 134.",
+      "The catalyst is precisely dated. The NU7 coinholder vote closed Monday, September 14, and the results landed that evening. Turnout was a record 66% of the eligible pool, with 2.4 million ZEC cast. Holders voted 98.9% to preserve the halving schedule and backed cutting block times to 25 seconds from 75. Developers are targeting November 5 for mainnet activation, after an October 6 testnet upgrade. ZEC was $1,111 on Tuesday and $1,335 by Wednesday.",
+      "The institutional side is doing its part. Grayscale's spot Zcash ETF (ZCSH) listed on NYSE Arca on August 25 as the first regulated U.S. spot vehicle for ZEC, and it has pulled in roughly $233 million and is closing in on $1 billion in assets. Grayscale has filed a 3-for-1 forward share split effective after the close on September 28 \u2014 a move you make when the share price has gotten away from retail buyers.",
+      "Two cautions. First, ZEC gave back 7.6% over the weekend, from $1,558 Friday to $1,439 Sunday. Moves this steep rarely go up in a straight line. Second, ZEC is up roughly 2,500% in 2026 and has climbed from the 82nd largest crypto by market cap to the 7th. Anything that has already repriced that far is not a value entry \u2014 it is a momentum trade, and it should be sized like one.",
+      "So is crypto heating back up? One week is not a trend, and a 3-4% week in BTC and ETH is a bounce, not a regime change. What we'd want to see is ETH holding above $2,600 rather than retesting it from below, and ETF flows staying positive for more than a single session. Those are the two things we're watching into this week.",
+      "Prices are Yahoo Finance daily closes, September 14\u201320, 2026. Nothing here is a recommendation to buy or sell any asset.",
+    ],
+  },
+  {
     slug: "bitcoin-yield-aum-update",
     title: "Bitcoin Yield AUM Update",
     date: "2026-07-24",
