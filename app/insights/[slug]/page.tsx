@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { notFound } from "next/navigation";
 import { posts, getPost } from "@/lib/posts";
 import type { Metadata } from "next";
@@ -19,7 +20,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
   if (!post) notFound();
 
   const formatted = new Date(post.date).toLocaleDateString("en-US", {
-    year: "numeric", month: "long", day: "numeric",
+    year: "numeric", month: "long", day: "numeric", timeZone: "UTC",
   });
 
   return (
@@ -36,6 +37,18 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
 
       <section className="py-16 bg-white">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
+          {post.image && (
+            <div className="relative w-full aspect-[3/2] rounded-2xl overflow-hidden border border-gray-100 mb-10">
+              <Image
+                src={post.image}
+                alt={post.title}
+                fill
+                priority
+                sizes="(min-width: 768px) 768px, 100vw"
+                className="object-cover"
+              />
+            </div>
+          )}
           <article className="prose prose-gray max-w-none">
             {post.paragraphs.map((p, i) => (
               <p key={i} className="text-gray-700 leading-relaxed mb-5 text-lg">{p}</p>

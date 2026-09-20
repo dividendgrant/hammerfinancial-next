@@ -20,7 +20,7 @@ export default function NewsPage() {
           <div className="space-y-6">
             {posts.map((post) => {
               const formatted = new Date(post.date).toLocaleDateString("en-US", {
-                year: "numeric", month: "long", day: "numeric",
+                year: "numeric", month: "long", day: "numeric", timeZone: "UTC",
               });
               return (
                 <Link key={post.slug} href={`/insights/${post.slug}/`} className="group flex gap-6 border border-gray-100 rounded-2xl overflow-hidden hover:shadow-md transition-shadow bg-white">
