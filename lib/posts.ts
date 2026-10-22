@@ -11,6 +11,24 @@ export type Post = {
 // shared "/post-default.jpg" for new posts — generate/supply a distinct image.
 export const posts: Post[] = [
   {
+    slug: "stopped-dripping-blox",
+    title: "We stopped dripping BLOX",
+    date: "2026-10-22",
+    excerpt: "NAV erosion caught up with BLOX. BTCI is now the one holding up — and we're leaning toward simply stacking spot BTC with the yield.",
+    image: "/post-stopped-dripping-blox.jpg",
+    paragraphs: [
+      "Back in June we started dripping BLOX and stopped dripping BTCI. The thinking was that BLOX was cheap and worth accumulating, while BTCI's NAV erosion made reinvesting into it a losing game. Four months later, the numbers say we had it backwards. We've stopped dripping BLOX.",
+      "Since June 25, the day we wrote that post, BLOX's share price has fallen from $15.77 to $12.01 — down 23.8%. It paid about $1.65 a share in weekly distributions over that stretch, and even with every one of them reinvested, a dripped position is still down roughly 14%. The distributions are also shrinking as the price falls: from $0.117 a share in late June to $0.088 in mid-October.",
+      "That is NAV erosion in plain terms. The fund is paying out more than it earns, and the difference comes out of the share price. Dripping into it doesn't fix that — it just buys more shares of something that keeps getting smaller.",
+      "What makes it hard to ignore is that Bitcoin had a good run over the same period. BTC went from about $59,700 on June 25 to about $84,000 on October 21, up roughly 41%. A crypto income fund falling 24% while Bitcoin rises 41% isn't a market problem. It's a structure problem.",
+      "BTCI went the other way. Its share price rose from $27.01 to $33.43, up 23.8%, while still paying about $2.69 a share in monthly distributions. With those reinvested, it's up roughly 35%. It's capping some of the upside, as a covered-call fund will, but it's tracking Bitcoin direction instead of fighting it. Right now BTCI is clearly outperforming BLOX.",
+      "So what are we doing? Honestly, we're watching before we commit. The option we keep coming back to is the simplest one: add spot BTC directly, and take the yield from our income positions and use it to buy more spot BTC, rather than reinvesting it back into the funds that paid it.",
+      "The appeal is that it keeps the income working without tying it to any one fund's NAV. Spot Bitcoin doesn't decay or pay out of principal. If BTC keeps trending up, we own more of it outright. If it pulls back, the yield buys more of it cheaper.",
+      "We're not selling our existing BLOX today, and we're not adding to it either. We'll keep monitoring both funds and post an update when we've made the call.",
+      "Prices are Yahoo Finance daily closes, June 25 – October 21, 2026. Distribution figures are per-share payouts over the same period. Nothing here is a recommendation to buy or sell any asset.",
+    ],
+  },
+  {
     slug: "is-crypto-heating-back-up",
     title: "Is crypto heating back up?",
     date: "2026-09-20",
