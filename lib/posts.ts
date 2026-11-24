@@ -11,6 +11,25 @@ export type Post = {
 // shared "/post-default.jpg" for new posts — generate/supply a distinct image.
 export const posts: Post[] = [
   {
+    slug: "hold-new-high-yield-purchases",
+    title: "Hold on new high yield purchases",
+    date: "2026-11-24",
+    excerpt: "BTC is back where it was in June. BTCI, CEPI and BLOX aren't. While crypto keeps dropping, we're saving the yield and buying spot BTC ETFs on red days instead.",
+    image: "/post-hold-high-yield-purchases.jpg",
+    paragraphs: [
+      "We're putting a hold on new high yield purchases. No new money into BTCI, CEPI or BLOX for now, and no reinvesting their distributions back into them. While crypto keeps dropping, we're saving the yield and using it to buy spot Bitcoin ETFs on red days.",
+      "The reason is NAV erosion, and the last five months show it clearly. On June 25, Bitcoin closed at $59,722. On November 23 it closed at $61,211, up 2.5%. After a run to $84,000 in October and a sharp drop since, BTC is roughly back where it started. The income funds are not.",
+      "BTCI is down 11.3%, from $27.01 to $23.96. It paid about $3.24 a share in distributions over that stretch, so with those counted it's about flat. But that's the problem: the fund's share price is 11% lower than it was when Bitcoin was at the same level, so the income has effectively been paid out of principal. Last month's post had BTCI as the one holding up. Since October 21 it's fallen 28.3%, slightly more than Bitcoin's 27.1% drop, after capping the upside on the way up.",
+      "CEPI is worse. It's down 28.0%, from $33.27 to $23.94, while paying about $5.19 a share. Even with the distributions added back, it's down about 12% over a period when Bitcoin finished slightly up.",
+      "BLOX is the real damage. It's down 49.3%, from $15.77 to $8.00, and still down about 37% after adding back the roughly $2.00 a share it paid out. Since we stopped dripping it on October 21, it's fallen another 33%.",
+      "The distributions are shrinking too. BTCI's monthly payout fell from $0.695 a share in October to $0.548 in November. CEPI's weekly payout has slipped from $0.231 to $0.205, and BLOX's from $0.081 to $0.058. When the share price drops, the payout eventually follows.",
+      "So here's the plan while crypto keeps falling. We keep collecting the yield from the positions we already hold, but we don't put it back into those funds. Instead we save it and, on red days, use it to buy spot Bitcoin ETFs.",
+      "The idea is to recover the NAV losses faster. Spot BTC doesn't pay out of principal, so if Bitcoin recovers, every share we buy at these levels gets the full upside. The covered-call funds would only get part of it. Buying on red days means the yield buys more Bitcoin while it's cheap, instead of more shares of funds whose NAV keeps shrinking.",
+      "We're not selling our existing positions, and this isn't a permanent exit from high yield. When crypto stabilizes and these funds stop losing NAV faster than Bitcoin, we'll look at adding again. Until then, the yield goes to spot.",
+      "Prices are Yahoo Finance daily closes, June 25 – November 23, 2026. Distribution figures are per-share payouts over the same period. Nothing here is a recommendation to buy or sell any asset.",
+    ],
+  },
+  {
     slug: "stopped-dripping-blox",
     title: "We stopped dripping BLOX",
     date: "2026-10-22",
